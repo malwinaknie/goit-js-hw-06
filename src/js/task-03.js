@@ -16,7 +16,7 @@ const images = [
 const list = document.querySelector("ul.gallery");
 console.log(list);
 
-const newGallery = images.map((el) =>
+const newGallery = images.forEach((el) =>
   list.insertAdjacentHTML(
     "beforebegin",
     `<li><img height = 300px src="${el.url}" alt="${el.alt}"/></li>`
