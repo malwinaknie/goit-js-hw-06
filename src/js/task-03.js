@@ -13,19 +13,12 @@ const images = [
   },
 ];
 
-const list = document.querySelector("ul.gallery");
+const list = document.querySelector(".gallery");
 console.log(list);
 
-const newGallery = images.forEach((el) =>
+images.forEach((el) =>
   list.insertAdjacentHTML(
-    "beforebegin",
-    `<li><img height = 300px src="${el.url}" alt="${el.alt}"/></li>`
+    "beforeend",
+    `<li><img src="${el.url}" alt="${el.alt}"/></li>`
   )
 );
-
-const liStyle = document.querySelectorAll('li');
-liStyle.forEach((elem)=> {
-  elem.style.display = "inline";
-  elem.style.padding = "10px";
-  elem.style.listStyle = "none"
-})

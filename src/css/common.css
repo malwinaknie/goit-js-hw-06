@@ -22,3 +22,18 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery {
+  background-color: gray;
+  padding-top: 5px;
+}
+
+.gallery li {
+  display: inline;
+  padding: 7px;
+  list-style: none;
+}
+
+.gallery img{
+height: 290px;
+}
