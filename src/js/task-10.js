@@ -21,14 +21,11 @@ function createBoxes(amount) {
   };
 };
 
-function destroyBoxes() {
-  boxElement.innerHTML = "";
-};
-
 createBtn.addEventListener('click', () => {
   createBoxes(input.value);
 });
 
-destroyBoxes.addEventListener('click', () => {
-  destroyBoxes();
-})
+destroyBtn.addEventListener('click', () => {
+  boxes.replaceChildren()
+  input.value = '0';
+});
